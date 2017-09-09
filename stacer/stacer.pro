@@ -77,12 +77,17 @@ FORMS += \
     Pages/Settings/settings_page.ui
 
 TRANSLATIONS += \
+    ../translations/stacer_ar.ts \
+    ../translations/stacer_de.ts \
     ../translations/stacer_en.ts \
+	../translations/stacer_ca-es.ts \
     ../translations/stacer_es.ts \
     ../translations/stacer_fr.ts \
     ../translations/stacer_hi.ts \	
     ../translations/stacer_kn.ts \
+    ../translations/stacer_pl.ts \
     ../translations/stacer_pt.ts \
+    ../translations/stacer_ru.ts \
     ../translations/stacer_sv.ts \
     ../translations/stacer_tr.ts
 
