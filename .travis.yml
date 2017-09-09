@@ -15,8 +15,6 @@ script:
   - cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_INSTALL_PREFIX=/usr
   - make -j$(nproc)
   - make DESTDIR=appdir install ; find appdir/
-  - # FIXME: Once everything is properly merged, the next line should be removed
-  - ( mkdir -p ./appdir/usr/share/applications/ ; cp native/stacer.desktop ./appdir/usr/share/applications/ )
   - wget -c "https://github.com/probonopd/linuxdeployqt/releases/download/continuous/linuxdeployqt-continuous-x86_64.AppImage"
   - chmod a+x linuxdeployqt*.AppImage
   - unset QTDIR; unset QT_PLUGIN_PATH ; unset LD_LIBRARY_PATH
